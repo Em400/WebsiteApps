@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="2c3e50">
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="manifest" href="manifest.json" />
+    <title>Daily Utility Hub</title>
+</head>
+<script>
+    if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+            navigator.serviceWorker.register("service-worker.js")
+                .then(reg => console.log("Service Worker registered"))
+                .catch(err => console.error("Service Worker error", err));
+        });
+    }
+</script>
+
+<body>
+    <header>
+        <h1>Daily Utility Hub</h1>
+    </header>
+
+    <main>
+        <nav class="tool-menu">
+            <button data-tool="caculator">Calculator</button>
+            <button data-tool="converter">Unit Converter</button>
+            <button data-tool="tip">Tip Calculator</button>
+            <button data-tool="age">Age Calculator</button>
+        </nav>
+
+        <section id="tool-container">
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="ad-banner">Ad Banner</div>
+    </footer>
+</body>
+<script src="app.js" type="text/javascript"></script>
+
+</html>
