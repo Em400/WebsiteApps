@@ -21,7 +21,7 @@ header{
     padding:1rem;
     margin:0.5rem;
     overflow-x:auto;
-    background:#111;
+    background:#ccc;
     box-sizing: border-box;
     border-radius: 8px;
 }
@@ -33,11 +33,27 @@ header{
 #tool-container{
     padding:1rem;
     min-height: 300px;
-    background:#111111;
-    color:white;
+    background:#ccc;
+    color:#000;
     margin:0.5rem;
     border-radius:8px;
 }
+
+#tool-container input{
+    border:none;
+    border-radius:5px;
+}
+#tool-container .action{
+    position:relative;
+    margin-top:30px;
+    background: #3498db;
+    color:white;
+    border:none;
+    padding:0.7rem 1.2rem;
+    border-radius:5px;
+    cursor: pointer;
+}
+
 input{
     width:100%;
     padding:0.6rem;
